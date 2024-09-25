@@ -17,16 +17,14 @@ model.load_weights('model2.weights.h5')
 
 class_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 emoji_paths = {
-    'angry': '/Users/ABC/EMOJIFY /emojis/angry.png',
-    'disgust': '/Users/ABC/EMOJIFY /emojis/disgusted.png',
-    'fear': '/Users/ABC/EMOJIFY /emojis/fearful.png',
-    'happy': '/Users/ABC/EMOJIFY /emojis/happy.png',
-    'neutral': '/Users/ABC/EMOJIFY /emojis/neutral.png',
-    'sad': '/Users/ABC/EMOJIFY /emojis/sad.png',
-    'surprise': '/Users/ABC/EMOJIFY /emojis/surprised.png'
+    'angry': ' ',#add angry image path
+    'disgust': '',#add disgust image path
+    'fear': ' ',#add fear image path
+    'happy': '',#add happy image path
+    'neutral': '',#add neutral image path
+    'sad': '',#add sad image path
+    'surprise': ''#add surprise image path
 }
-
-
 
 def preprocess_image(image_path):
     datagen = ImageDataGenerator(rescale=1./255)  # Normalizing the image
